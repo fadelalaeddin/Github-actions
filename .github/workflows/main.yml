@@ -12,4 +12,10 @@ jobs:
     steps: 
       - name: Print a welcome message
         run: echo "Welcome to my Github profile" 
+
+      - name: Checkout repo
+        uses: actions/checkout@v3.7.0
+
+      - name: List repo files
+        run: ls -la
         
